@@ -7,7 +7,7 @@ pipeline {
   }
 
     environment {
-        IMAGE_NAME = "yogeshsla/javaapp"
+        IMAGE_NAME = "yogeshjanani/javaapp"
         IMAGE_TAG  = "latest"
         CONTAINER  = "java-container"
     }
@@ -57,7 +57,7 @@ pipeline {
         // 5. Push Image
         stage('Push to Docker Hub') {
             steps {
-                sh 'sudo docker push $IMAGE_NAME:$IMAGE_TAG'
+                sh 'docker push $IMAGE_NAME:$IMAGE_TAG'
             }
         }
 
