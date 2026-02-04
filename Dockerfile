@@ -1,5 +1,5 @@
 # Base Image
-FROM openjdk:11-jre-slim
+FROM eclipse-temurin:11-jre-jammy
 
 # Working directory
 WORKDIR /app
