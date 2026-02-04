@@ -57,7 +57,7 @@ pipeline {
         // 5. Push Image
         stage('Push to Docker Hub') {
             steps {
-                sh 'docker push $IMAGE_NAME:$IMAGE_TAG'
+                sh 'sudo docker push $IMAGE_NAME:$IMAGE_TAG'
             }
         }
 
