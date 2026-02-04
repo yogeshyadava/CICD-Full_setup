@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/javaapp-1.0.jar app.jar
 
 # Expose port
-EXPOSE 8080
+EXPOSE 1818
 
 # Run app
 CMD ["java", "-jar", "app.jar"]
