@@ -2,6 +2,10 @@ pipeline {
 
     agent any
 
+    tools {
+    maven 'maven-3'
+  }
+
     environment {
         IMAGE_NAME = "yogeshsla/javaapp"
         IMAGE_TAG  = "latest"
